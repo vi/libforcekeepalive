@@ -15,8 +15,8 @@
 
                    
 static int (*orig_connect)(int sockfd, const struct sockaddr *addr,
-                   socklen_t addrlen);
-static int (*orig_accept)(int sockfd, struct sockaddr *addr, socklen_t *addrlen);
+                   socklen_t addrlen) = NULL;
+static int (*orig_accept)(int sockfd, struct sockaddr *addr, socklen_t *addrlen) = NULL;
 
             
                         
